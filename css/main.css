@@ -1,0 +1,156 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 1200px;
+	margin: 30px;
+}
+
+.neon1 {
+	max-width: 600px;
+	max-height: 200px;
+	text-align: center;
+	font-size: 1.5rem;
+  
+	letter-spacing: 5px;
+	font-family: 'Patrick Hand', cursive;
+	
+	padding: 2.5rem;
+	border: solid 2px #fff;
+	border-radius: 0.8rem;
+	
+	box-shadow: 
+    0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem #0fa,
+    0 0 .8rem #0fa,
+    0 0 1rem #0fa,
+    inset 0 0 .1rem #fff,
+    inset 0 0 .2rem #fff,
+    inset 0 0 .3rem #0fa,
+    inset 0 0 .8rem #0fa,
+    inset 0 0 1rem #0fa;
+}
+
+.neon1-title {
+	color: white;
+	text-shadow:
+	/* белый свет */
+	0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+	
+	/* зеленый свет */
+	0 0 11px #0fa,
+    0 0 20px #0fa,
+    0 0 30px #0fa,
+    0 0 55px #0fa,
+    0 0 80px #0fa;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 8px #fff,
+      0 0 15px #0fa,
+      0 0 30px #0fa,
+      0 0 40px #0fa,
+      0 0 70px #0fa,
+      0 0 100px #0fa;
+    }
+	
+    20%, 24%, 55% {
+    text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 5px #fff,
+      0 0 11px #0fa,
+      0 0 20px #0fa,
+      0 0 30px #0fa,
+      0 0 55px #0fa,
+      0 0 80px #0fa;
+  }
+}
+
+.flicker-01, .flicker-09 {
+  animation: flicker .5s infinite alternate;    
+}
+
+.flicker-02 {
+  animation: flicker .7s infinite alternate;     
+}
+
+.flicker-03 {
+  animation: flicker .3s infinite alternate;     
+}
+
+.flicker-04 {
+  animation: flicker 1.5s infinite alternate;     
+}
+
+.flicker-05, .flicker-07 {
+  animation: flicker 1s infinite alternate;     
+}
+
+.flicker-06 {
+  animation: flicker 1.2s infinite alternate;     
+}
+
+.flicker-08 {
+  animation: flicker .8s infinite alternate;     
+}
+
+.neon2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  max-height: 200px;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px rgb(67, 67, 255), 0 0 15px rgb(40, 40, 255), 0 0 20px rgb(5, 5, 255),
+  
+  inset 0 0 3px #fff, inset  0 0 6px #fff, inset 0 0 9px rgb(67, 67, 255), inset 0 0 15px rgb(40, 40, 255), inset 0 0 20px rgb(5, 5, 255);
+}
+
+.neon2-title {
+  font-size: 3rem;
+  padding: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(91, 250, 91), 0 0 30px rgb(47, 252, 47), 0 0 50px rgb(11, 255, 11);
+}
+
+@media (max-width: 780px) {
+	html {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 530px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 440px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 390px) {
+	html {
+		font-size: 6px;
+	}
+}
